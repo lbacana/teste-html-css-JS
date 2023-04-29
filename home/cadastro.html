@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/cadastro.css">
+    <title>Teste Formulário</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+  
+    <!--Início do formulário-->
+    <form action="##.php">
+        <div>
+            <h1 id="titulo">Cadastro</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+        <fieldset>
+            <div class="campo">
+                <label for="Primeironome"><strong>Primeiro Nome</strong></label>
+                <input type="text" id="Pnome" name="Pnome" required>
+            </div>
+
+            <div class="campo">
+                <label for="Sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" id="Snome" name="Snome" required>
+            </div>
+
+            <div class="campo">
+                <label for="Telefone"><strong>Telefone<span  class ="required"> * </span ></strong></label>
+                <input type="number" id="tel" name="tel" placeholder ="(99) 99999-9999" required="true">
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" id="email" name="email" required="true"><br>
+            </div>
+
+            <div>
+                <label for="masculino"><strong>Masculino</strong></label>
+                <input type="radio" id="masculino" name="genero">
+               
+                <label for="feminino"><strong>Feminino</strong></label>
+                <input type="radio" id="feminino" name="genero" >
+            </div>
+
+            <div>
+                <button type="reset">Limpar Formulário</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
